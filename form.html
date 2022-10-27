@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>Document</title>
+	<style>
+		body {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+
+		footer {
+			margin-top: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-success">
+			<div class="container">
+				<a class="navbar-brand text-white" href="#">Logo</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link text-white" aria-current="page" href="/">Клиенты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white active" href="/form.html">Форма</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<div class="container my-3">
+			<form action="#">
+				<div class="mb-3">
+					<label for="agent_id" class="form-label">ID Агента</label>
+					<input type="text" class="form-control" id="agent_id" placeholder="ID Агента">
+				</div>
+				<div class="mb-3">
+					<label for="client_id" class="form-label">ID Клиента</label>
+					<input type="text" class="form-control" id="client_id" placeholder="ID Клиента">
+				</div>
+				<div class="mb-3">
+					<label for="family_id" class="form-label">ID Семьи</label>
+					<input type="text" class="form-control" id="family_id" placeholder="ID Семьи">
+				</div>
+				<div class="mb-3">
+					<label for="login" class="form-label">Логин</label>
+					<input type="text" class="form-control" id="login" placeholder="Логин">
+				</div>
+				<div class="mb-3">
+					<label for="password" class="form-label">Пароль</label>
+					<input type="password" class="form-control" id="password" placeholder="Пароль">
+				</div>
+				<div class="mb-3">
+					<label for="exampleFormControlInput2" class="form-label">Дата подачи документов</label>
+					<input type="date" class="form-control" id="exampleFormControlInput2"
+						placeholder="Дата подачи документов" disabled>
+				</div>
+				<div class="mb-3">
+					<select class="form-select" aria-label="Default select example">
+						<option selected>Выберите страну</option>
+						<option value="1">Франция</option>
+						<option value="2">Италия</option>
+						<option value="3">Сша</option>
+					</select>
+				</div>
+				<a href="/" class="btn btn-success">Отправить</a>
+			</form>
+		</div>
+	</main>
+	<footer class="bg-success p-3">
+		<div class="container">
+			<div class="text-white">Copyright</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

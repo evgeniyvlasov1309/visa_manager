@@ -8,33 +8,114 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<title>Document</title>
+	<style>
+		body {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+
+		footer {
+			margin-top: auto;
+		}
+	</style>
 </head>
 
 <body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-success">
+			<div class="container">
+				<a class="navbar-brand text-white" href="#">Logo</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link text-white active" aria-current="page" href="/">Клиенты</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" href="/form.html">Форма</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
 	<main>
-		<div class="container mt-3">
-			<form action="">
-				<div class="mb-3">
-					<label for="exampleFormControlInput2" class="form-label">ID Агента</label>
-					<input type="text" class="form-control" id="exampleFormControlInput2" placeholder="ID Агента">
-				</div>
-				<div class="mb-3">
-					<label for="exampleFormControlInput2" class="form-label">Дата подачи документов</label>
-					<input type="date" class="form-control" id="exampleFormControlInput2"
-						placeholder="Дата подачи документов">
-				</div>
-				<div class="mb-3">
-					<select class="form-select" aria-label="Default select example">
-						<option selected>Выберите страну</option>
-						<option value="1">Франция</option>
-						<option value="2">Италия</option>
-						<option value="3">Сша</option>
-					</select>
-				</div>
-				<button type="submit" class="btn btn-success">Отправить</button>
-			</form>
+		<div class="container my-3">
+			<div class="table-responsive">
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Имя</th>
+							<th scope="col">Фамилия</th>
+							<th scope="col">ID агента</th>
+							<th scope="col">ID клиента</th>
+							<th scope="col">ID семьи</th>
+							<th scope="col">Логин</th>
+							<th scope="col">Пароль</th>
+							<th scope="col">Дата подачи документов</th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<th scope="col">Василий</th>
+							<th scope="col"></th>
+							<th scope="col">123123</th>
+							<th scope="col">23423</th>
+							<th scope="col">123123</th>
+							<th scope="col">vasya</th>
+							<th scope="col">vasya123ww</th>
+							<th scope="col">13.07.2022</th>
+							<th scope="col">
+								<a href="/form.html">Изменить</a>
+							</th>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<th scope="col">Василий</th>
+							<th scope="col"></th>
+							<th scope="col">123123</th>
+							<th scope="col">23423</th>
+							<th scope="col">123123</th>
+							<th scope="col">vasya</th>
+							<th scope="col">vasya123ww</th>
+							<th scope="col">13.07.2022</th>
+							<th scope="col">
+								<a href="/form.html">Изменить</a>
+							</th>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<th scope="col">Василий</th>
+							<th scope="col"></th>
+							<th scope="col">123123</th>
+							<th scope="col">23423</th>
+							<th scope="col">123123</th>
+							<th scope="col">vasya</th>
+							<th scope="col">vasya123ww</th>
+							<th scope="col">13.07.2022</th>
+							<th scope="col">
+								<a href="/form.html">Изменить</a>
+							</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<a class="btn btn-success mt-3" href="/form.html">Новая запись</a>
 		</div>
 	</main>
+	<footer class="bg-success p-3">
+		<div class="container">
+			<div class="text-white">Copyright</div>
+		</div>
+	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
